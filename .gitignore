@@ -1,0 +1,10 @@
+.idea/
+*.DS_Store
+*/__pycache__/
+*.pyc
+/collection_setup/
+/data/
+/old/
+/outputs/
+/scratch.py
+/manova.py
