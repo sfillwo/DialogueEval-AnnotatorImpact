@@ -152,8 +152,17 @@ for label, r in result_ndev.items():
     results_entries.append([label, 'Stu$_x$', r[1], r[0].confidence_interval.low, r[0].confidence_interval.high])
 
 results_df = pd.DataFrame.from_records(results_entries, columns=["label", "groups", "estimate", "CI low", "CI high"])
-grouped_barplot_cohensd(results_df, None, "", "", value_col="estimate",
-                        filename="outputs/figures/effect_sizes_per_group_comparative",
-                        ylim=(0,1.25), fig_size=(10,3), rot=0, width=0.8)
+
+pivoted_results_df = results_df.pivot(
+    index="label",
+    columns="groups",
+    values="estimate"
+)
+pivoted_results_df = pivoted_results_df.round(decimals=2)
+print(pivoted_results_df)
+
+# grouped_barplot_cohensd(results_df, None, "", "", value_col="estimate",
+#                         filename="outputs/figures/effect_sizes_per_group_comparative",
+#                         ylim=(0,1.25), fig_size=(10,3), rot=0, width=0.8)
 
 

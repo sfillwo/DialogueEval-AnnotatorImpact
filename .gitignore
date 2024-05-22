@@ -3,7 +3,7 @@
 */__pycache__/
 *.pyc
 /collection_setup/
-/data/
+/data/*_original*
 /old/
 /outputs/
 /scratch.py
