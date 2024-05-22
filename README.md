@@ -2,7 +2,7 @@
 
 This repo contains the data and analysis scripts for the paper: 
 
-[Exploring the Impact of Human Evaluator Group on Chat-Oriented Dialogue Evaluation](https://arxiv.org/pdf/2309.07998)
+[Exploring the Impact of Human Evaluator Group on Chat-Oriented Dialogue Evaluation](https://arxiv.org/pdf/2309.07998) (LREC-COLING 2024)
 
 **Abstract:** Human evaluation has been widely accepted as
 the standard for evaluating chat-oriented dialogue systems. However, there is a significant
